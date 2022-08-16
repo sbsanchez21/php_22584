@@ -1,0 +1,34 @@
+GET
+Tenga en cuenta que la cadena de consulta (pares de nombre / valor) se envía en la URL de una solicitud GET:
+
+/test/demo_form.php?name1=value1&name2=value2
+
+Algunas otras notas sobre las solicitudes GET:
+Las solicitudes GET se pueden almacenar en caché
+Las solicitudes GET permanecen en el historial del navegador
+Las solicitudes GET se pueden marcar
+Las solicitudes GET nunca deben usarse cuando se trata de datos confidenciales
+Las solicitudes GET tienen restricciones de longitud
+Las solicitudes GET solo se utilizan para solicitar datos (no modificar)
+
+
+POST
+Los datos enviados al servidor con POST se almacenan en el cuerpo de la solicitud de la solicitud HTTP:
+
+POST /test/demo_form.php HTTP/1.1
+Host: w3schools.com
+name1=value1&name2=value2
+
+POST es uno de los métodos HTTP más comunes.
+
+Algunas otras notas sobre las solicitudes POST:
+Las solicitudes POST nunca se almacenan en caché
+Las solicitudes POST no permanecen en el historial del navegador
+Las solicitudes POST no se pueden marcar
+Las solicitudes POST no tienen restricciones en la longitud de los datos.
+
+
+El método PUT
+PUT se utiliza para enviar datos a un servidor para crear / actualizar un recurso.
+
+La diferencia entre POST y PUT es que llamar a la misma solicitud PUT varias veces siempre producirá el mismo resultado. Por el contrario, llamar a una solicitud POST repetidamente tiene los efectos secundarios de crear el mismo recurso varias veces.

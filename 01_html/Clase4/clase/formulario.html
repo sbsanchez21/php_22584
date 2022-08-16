@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer formulario</title>
+</head>
+<body>
+    <h4>Formulario de solicitud de viaje</h4>
+
+    <!-- todo: hacer diseño con css -->
+    <!-- <form action="https://www.google.com/formularioIngreso.php" method="get"> -->
+    <!-- <form action="https://aulasvirtuales.bue.edu.ar/course/view.php" method="get"> -->
+    <form action="chauHtml.html" method="get">        
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre">
+
+        <br><br>
+
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido">
+
+        <br><br>
+        <label for="pass">Contraseña:</label>
+        <input type="password" name="pass" id="pass">
+
+        <br><br>
+        <label for="fechaNac">Fecha de Nacimiento:</label>
+        <input type="date" name="fechaNac" id="fechaNac">
+
+        <br><br>
+        <label for="obser">Obesrvaciones</label>
+        <textarea name="obser" id="" cols="50" rows="4"></textarea>
+
+        <br><br>
+        <label for="provincia">Seleccione su provincia: </label>
+        <br>
+        <select name="provincia" id="provincia">
+            <!-- <option aria-placeholder="" default hidden> ---  Seleccione una provincia  ---  </option> -->
+            <option value="1">Buenos Aires</option>
+            <option value="2">Mendoza</option>
+            <option value="3">Corrientes</option>
+            <option value="4">Córdoba</option>
+        </select>
+
+        <br><br>
+        <label for="localidad">Seleccione su localidad: </label>
+        <br>
+        <select name="localidad" id="">
+            <!-- <option aria-placeholder="" default hidden> ---  Seleccione una localidad  ---  </option> -->
+            <option value="1">CABA</option>
+            <option value="2">Quilmes</option>
+            <option value="3">San Miguel</option>
+        </select>
+    
+
+        <br><br>
+        <label for="mes">Seleccione el mes: </label>
+        <br>
+        <input type="radio" name="mes" id="" value="1">Enero 
+        <br>
+        <input type="radio" name="mes" id="" value="2">Febrero
+        <br>
+        <input type="radio" name="mes" id="" value="3">Marzo
+        <br>
+        <input type="radio" name="mes" id="" value="4">Abril
+        <br>
+        <input type="radio" name="mes" id="" value="5">Mayo
+
+        <br><br>
+        <input type="checkbox" name="mascota1" id="" value="1">Perro
+        <br>
+        <input type="checkbox" name="mascota2" id="" value="2">Gato
+        <br>
+        <input type="checkbox" name="mascota3" id="" value="3">Loro
+
+        <br>
+        <input type="week" name="semana" id="">
+        <br>
+        <input type="color" name="color" id="">
+        <br>
+        <input type="number" name="dni" id="">
+        <br>
+        
+
+
+        <br><br>
+
+        <input type="submit" value="Enviar">
+        <br>
+        <input type="reset" value="Limpiar">
+
+    </form>
+    
+</body>
+</html>
