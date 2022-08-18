@@ -1,0 +1,22 @@
+ul {
+    list-style-type: none;
+}
+
+
+.logoGoogle {
+    text-align: center;
+}
+
+.logoGoogle > img {
+    width: 200px;
+}
+
+.inputGoogle {
+    text-align: center;
+}
+
+.inputGoogle > input {
+    border-color: lightgray;
+    border-radius: 15px;
+    border: 1px solid;
+}

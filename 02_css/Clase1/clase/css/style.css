@@ -1,0 +1,40 @@
+/* selectores de etiquetas */
+p {
+    background-color: lightcoral;
+    color: blue;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+input {
+    background-color: #d4e5eb;
+    border: 0;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+}
+
+a {
+    background-color: red !important;
+}
+
+/* selectores de clases */
+.textoAzulGrande {
+    color: blue;
+    font-size: 1.4rem;
+
+}
+
+/* selector de id */
+#anuncio {
+    background-color: yellow;
+    font-size: 1.3rem;
+    width: 20%;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 1rem;
+}
