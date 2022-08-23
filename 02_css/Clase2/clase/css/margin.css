@@ -1,0 +1,8 @@
+.margen1 {
+    margin: 1rem .3rem 1rem .3rem;
+    padding: 1rem;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+}

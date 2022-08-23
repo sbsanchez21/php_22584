@@ -1,0 +1,51 @@
+html {
+    font-size: 16px; /*tamañao por defecto letra 16px */
+}
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+    color: gray;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.logoGoogle > img {
+    width: 250px;
+    margin: 1rem;
+}
+
+
+.inputGoogle > input {
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    width: 450px;
+    height: 35px;
+    padding: 0rem .5rem 0rem .5rem;
+}
+
+.menu {
+    text-align: right;
+}
+
+.menu > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.menu > a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.botones > input {
+    margin: 1rem .3rem 1rem .3rem;
+    padding: .8rem;
+    border: 0;
+    background-color: #bdbdbd;
+}
