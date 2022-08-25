@@ -1,0 +1,8 @@
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5px;
+    padding: 5px;
+    background-color: yellow;
+    border: 2px solid ;
+  }
