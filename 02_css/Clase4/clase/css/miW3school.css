@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}  
+    
+   
+.menuArriba {
+
+    width: 150px;
+    height: 60px;
+    /* background-color: #ddd; */
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.menuArriba > a {
+    text-decoration: none;
+    color: black;
+    /* todo: hacer funcionar el flex vertical center */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.menuArriba:hover {
+    /* todo: poner texto color blanco ??*/
+    background:#04aa6d;
+    color: white;
+
+}
+
+.menuArriba > a:hover {
+    color: white;
+}
+
+
+.menuAbajo {
+    background-color: black;
+    /* height: 30px; */
+    position: sticky;
+    position: -webkit-sticky;    
+    top: 0;
+}
+
+.linkAbajo {
+    display: inline-block;
+    height: 50px;
+}
+
+.linkAbajo:hover {
+    background: #04aa6d;
+}
+
+.linkAbajo > a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+
+}

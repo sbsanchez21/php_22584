@@ -1,0 +1,46 @@
+p::first-line {
+  background-color: red;
+}
+p::first-letter {
+  font-size: 2rem;
+}
+
+h1::first-letter {
+  background-color: blue;
+  color: red;
+}
+
+h2::before {
+	content: "Leer esto: ";
+  color: red;
+  background-color: blue;
+}
+
+h3::after {
+	content: " Cita al libro 'Cosmos'";
+  color: green;
+}
+
+p::selection {
+  color: red;
+  background-color: yellow;
+}
+
+/* h2::selection {
+  color: red;
+  background-color: yellow;
+} */
+
+/* ::selection {
+  color: red;
+  background-color: yellow;
+} */
+
+input::placeholder {
+  background-color: #ddd;
+}
+
+textarea::grammar-error {
+  text-decoration: underline red;
+  color: red;
+}
