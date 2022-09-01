@@ -1,0 +1,10 @@
+.cajaAnimada {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    padding: 1rem;
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s; /* don't forget to set a duration! */
+    --animate-delay: 1s;
+    --animate-repeat: 2;
+}
