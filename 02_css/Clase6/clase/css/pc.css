@@ -1,0 +1,14 @@
+body {
+    background-color: lightblue;
+}
+
+.texto {
+    font-size: 1.5rem;
+}
+
+.tabla {
+    width: 1000px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+}

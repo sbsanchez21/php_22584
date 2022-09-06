@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.oradores {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.orador {
+    border: 1px solid lightgray;
+    width: 300px;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.orador > img {
+    width: 100%;
+
+}
+
+.textoOrador {
+    margin: 1rem;
+}
+
+.botones > input {
+    border: 0;
+    border-radius: 3px;
+    padding: .2rem .5rem 0.2rem .5rem;
+    font-size: .8rem;
+    font-weight: bold;
+    margin-bottom: .2rem;
+    /*todo: alinear verticalmente*/
+    /* display: flex;
+    align-items: center;
+    flex-direction: row; */
+}
+
+.botones > input:hover {
+    animation: flash; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+    cursor: pointer;
+}
+
+
+.btnAmarillo {
+    background: rgb(254, 193, 7);
+}
+
+.btnCeleste {
+    background: rgb(25, 161, 185);
+    color: white;
+}
+
+.titulo {
+    font-size: 1.4rem;
+    margin: 0.1rem 0 1rem 0;
+}
+
+.descripcion {
+    font-size: .9rem;
+    text-align: justify;
+}
+
+@media only screen and (max-width:700px) {
+    .oradores {
+        flex-direction: column;
+        align-items: center;
+        /* todo: centrar div en la página */
+    }
+}
