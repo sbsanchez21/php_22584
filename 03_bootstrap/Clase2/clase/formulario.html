@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body class="bgGrisClaro">
+
+    <div class="container">
+        <div class="py-4 text-center">
+            <h3>Datos Personales</h3>
+            <p>Ingrese su datos personales</p>
+        </div>
+
+
+        <form action="boot.html" method="post">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese su nombre" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" class="form-control" placeholder="Ingrese su apellido" required>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Ingrese su email" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="pass">Contraseña</label>
+                    <input type="password" name="pass" id="pass" class="form-control" placeholder="Ingrese su contraseña" required>
+                </div>
+            </div>
+            
+
+        </form>
+
+    </div>
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
