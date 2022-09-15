@@ -1,0 +1,13 @@
+- crear carpeta
+- programar integrador
+- terminal -> new terminal
+- git init //inicializa el proyecto en git
+- git add . //coloca los nuevos archivos en stage area 
+- git commit -m 'algun comentario' //subre los archivos al repo local
+- git remote add origin https://github.com/sbsanchez21/integrador22584.git  //vincula mi repo con el repo de github
+- git push -u origin master
+
+Modifaciones o agreaciones de archivos
+- git add .
+- git commit -m 'algiun comentario'
+- git push -u origin master
