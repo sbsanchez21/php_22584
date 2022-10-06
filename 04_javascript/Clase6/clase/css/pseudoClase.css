@@ -1,0 +1,43 @@
+div:hover {
+    background-color: red;
+}
+
+input:hover {
+    cursor: text;
+    background-color: lightgray;
+    /* width: 200px; */
+}
+
+li:last-child {
+    background-color: red;
+}
+
+li:nth-child(3) {
+    background-color:green;
+}
+
+li:nth-child(2n) {
+    background-color: lightgray;
+}
+
+table {
+    /* border: 1px solid black; */
+    width: 80%;
+    padding: .5rem;
+}
+
+table tr  {
+    border: 1px solid;
+}
+
+tr:nth-child(2n+1) {
+    background-color: lightgray;
+}
+
+a:visited {
+    background-color: gray;
+}
+
+input:focus {
+    width: 100px;
+}

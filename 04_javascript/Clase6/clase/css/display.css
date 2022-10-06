@@ -1,0 +1,23 @@
+.caja {
+  /* position: fixed; */
+  /* display: inline-block; */
+  /* display: block; */
+  /* display: inline; */
+  /* display: inline-block; */
+  /* display: none; */
+  width: 100px;
+  height: 100px;
+  /* background: black; */
+  padding: 50px;
+  /* margin: 10px; */
+  border: 2px solid black;
+  background: red;
+  color: gold;
+}
+
+#posAbsoluto {
+  position: relative;
+  top: 40px;
+  left: 40px;
+  background: green;
+}

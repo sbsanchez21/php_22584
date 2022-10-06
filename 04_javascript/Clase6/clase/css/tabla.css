@@ -1,0 +1,11 @@
+table {
+    background-color: #ddd;
+}
+
+p {
+    color: blue;
+}
+
+.textoGrande {
+    font-size: 2rem;
+}
