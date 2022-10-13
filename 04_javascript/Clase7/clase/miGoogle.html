@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/styleGoogle.css">
+
+</head>
+
+<body>
+    <div class="menu">
+        <a href="https://www.google.com/">Gmail</a>
+        <a href="https://www.google.com/">Imágenes</a>
+        <img src="images/fotoPerfil.jpg" alt="Foto perfil">
+    </div>
+
+    <div class="logoGoogle">
+        <img src="images/logoGoogle.png" alt="Google">
+    </div>
+    
+    <div class="inputGoogle">
+        <input type="text" name="q" id="q" onkeyup="mostrarSugerencias()" >
+        <div id="msj" style="margin:1rem"></div>
+
+    </div>
+
+    <div class="botones">
+        <input type="submit" value="Buscar en Google">
+        <input type="submit"    value="Voy a tener suerte">
+    </div>
+
+    <p>
+        Ofrecido por Google en: 
+        <a href="#">English</a>
+        <a href="#">Español (Latinoamérica)</a>
+        
+    </p>
+
+
+    <script src="js/miGoogle.js"></script>
+</body>
+</html>

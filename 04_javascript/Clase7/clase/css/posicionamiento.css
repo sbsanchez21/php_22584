@@ -1,0 +1,16 @@
+.caja {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background: red;
+  color: gold;
+  font-size: 2rem;
+}
+
+#posicion {
+  position: fixed; 
+  top: 50px;
+  left: 60px;
+  background: black;
+}
+
