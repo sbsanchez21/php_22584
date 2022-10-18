@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    </head>
+    <body style="background-color: lightblue;">
+        <p id="hola">Hola DOM</p>
+
+        <button onclick="cambiarBg()" >Cambiar Color Fondo</button>
+
+        <br><br>
+        <button class="btn btn-primary" onclick="mostrarNota()">Mostrar Nota</button>
+        <button class="btn btn-primary" onclick="cambiarEstilo()">Cambiar estilo</button>
+        <div id="nota"  style="margin:1rem" onmouseover="resaltar()" onmouseleave="opacar()">Nota Vacía</div>
+
+        <button class="btn btn-primary" onclick="changeButton()">Cambiar Estilo Botones</button>
+        <button class="btn btn-primary" onclick="changeClass()">Cambiar Clases</button>
+
+        <button class="btn btn-primary" onclick="changeFontSize()">Cambiar Tamaño fuente</button>
+
+        <br><br>
+        <button id="btnMostrarMsj" class="btn btn-danger"  onclick="mostrarMensaje()">Crear Mensaje</button>
+        <div id="mensaje" class="bg-warning border p-2 m-2"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/dom.js"></script>
+    </body>
+</html>
