@@ -1,0 +1,2 @@
+1||10||Licuadora||Precio
+2||11||Aspiradora||Precio

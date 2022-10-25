@@ -1,0 +1,23 @@
+- Concepto Base de Datos: antiguas datos crudos
+	Funciones: 
+	  indices hacen la busqueda más rápida
+	  foreing key relacionan tablas
+	  primary key id a cada registro
+	  rollback permiten deshacer cambios
+	  trigger ejecutan funciones cuando creas, upd, del un dato 
+	  etc.
+
+- Tipos de DB:
+  - relacionales: mysql, oracle, sqlserver, postgrestsql
+  - objetos: mongodb Paradigma orientado a objetos
+	
+- Diferentes DB: MySql, Oracle, SqlServer
+	Administración de Base de Datos
+	Oracle, SqlServer -> muy caros, manejan mucha cantidad datos
+	MySql -> open source, sistemas medianos y pequeños
+
+- tipos de datos	
+https://www.techonthenet.com/mysql/datatypes.php	
+	
+- Sistema Cliente Servidor MySql, PhpMyAdmin con Apache, comparar con Server Web 
+- Instalar Xampp https://www.apachefriends.org/es/index.html
