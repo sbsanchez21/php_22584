@@ -1,0 +1,91 @@
+Alcance del sistema:
+====================
+Adminstración de alumnos, materias y profesores
+Objetivo: 
+ - los alumnos consulte sus notas, sus materias, faltas. 
+ - los profesores consulten sus horarios, sus materias, cant alumnos x materias, etc.
+ - lo consulten de manera remota mediante un navegador
+
+
+Entidades:
+==========
+Alumnos
+Materias
+Profesores
+
+Datos necesarios de las entidades: NO normalizados
+===================================
+Toda tabla debe tener id
+Alumnos:
+id //identifica univocamente un registro, y relaciona con otras tablas
+nombre y apellido
+dni 
+direccion
+email
+telefono
+fecha nacimiento
+grado cursando
+materias 
+
+Profesores:
+id 
+nombre y apellido
+dni 
+direccion
+email
+telefono
+fecha nacimiento
+materias que dicta
+horarios 
+
+Materias:
+id 
+nombre
+descripcion
+programa
+duración
+horarios
+profe que la dicta
+alumnos que la cursan 
+
+
+Tablas de DB: Normalizada
+========================
+Alumnos:
+id int primaryKey AutoIncrement
+nombre varchar(50) 
+apellido varchar(50) 
+dni int 
+email varchar(50)
+direccion: calle, altura, manzana, piso, dto, localidad, provincia, pais //podría ser otra tabla -> idDireccion int 
+telefono varchar(50) +54 9 1166654445
+fechaNacimiento date
+grado //podría ser una tabla Grado si queremos guardar historial varchar(10)
+materias //lista de materias Matemática, Química, Física -> lista idMaterias  lista int
+
+
+Direccion:
+id int primaryKey AutoIncrement
+calle varchar(50)
+altura int 
+manzana varchar(10)
+piso int 
+dpto varchar(10)
+localidad varchar(50) //podría ser una tabla localidad  
+provincia varchar(50) //podría ser una tabla provincia  
+pais varchar(50) //podría ser una tabla pais
+
+
+Materias:
+id int primaryKey AutoIncrement
+nombre varchar(50) 
+descripcion varchar(80) 
+programa varchar(10) 
+duración varchar(10) 
+horarios varchar(20) 
+idProfesor //apunta a la Tabla Profesores a un profe
+alumnos //listado de alumnos que la cursan -> lista de idAlumnos
+
+
+
+
