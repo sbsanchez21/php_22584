@@ -1,0 +1,13 @@
+JOIN
+======
+SELECT materias.nombre FROM materias WHERE materias.idProfesor=2 
+
+SELECT profesores.id, profesores.nombre, profesores.apellido, materias.nombre FROM profesores INNER JOIN materias ON profesores.id=materias.idProfesor 
+
+
+SELECT alumnos.nombre, alumnos.apellido, materias.nombre FROM (alumnos INNER JOIN alumnosmaterias on alumnos.id=alumnosmaterias.idAlumno) INNER JOIN materias ON materias.id=alumnosmaterias.idMateria 
+
+
+INSTRUCCIONES:
+-------------
+ALTER TABLE alumnosmaterias ADD FOREIGN KEY(idAlumno) REFERENCES alumnos(id) 

@@ -1,0 +1,47 @@
+Tipos Relaciones entre tablas:
+==============================
+
+Tablas:
+=======
+Profesores
+Materias
+Alumnos
+AlumnosMaterias
+
+Relaciónes: N=Muchas
+===========
+profesores		materias
+	1			muchas(N)  -> un profesor puede dictar muchas materias
+	1				1	-> una materia solo puede ser dictada por un profesor
+======================	
+	1			muchas(N) -> en la tabla materia va el id de la tabla profesores
+	
+	
+preceptores		materias
+	1				N	-> un preceptor administra una materia
+	1				1	-> una materia solo es administra por un preceptor
+========================
+	1				N	-> en la tabla materia va el id de la tabla preceptores
+	
+	
+alumnos			materias
+	1				N	-> un alumnos puede cursar muchas materias
+	N				1	-> una materia tiene muchos alumnos
+===========================
+	N				N -> crear tabla relacional AlumnosMaterias(idAlumno, idMateria)
+
+
+Tabla AlumnosMaterias:
+=====================
+idAlumno	idMateria
+	1			2	
+	1			5
+	2			3
+	2			1
+	3			5
+	3			1
+	3			2
+	5			1	->idAlumno=5 hace referencia al alumno con id=5
+					->idMateria=1 hace referencia a la materia con id=1
+					
+Mediante esta tabla yo puedo obtener todas las materias que cursa el el alumno con id=1 por ejemplo, que seria el 1° y 2° registro, nos devuelve el idMateria 2 y 5.					
