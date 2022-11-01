@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-11-2022 a las 15:47:15
+-- Tiempo de generación: 01-11-2022 a las 16:08:58
 -- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 7.4.10
 
@@ -47,6 +47,29 @@ INSERT INTO `alumnos` (`id`, `nombre`, `apellido`, `dni`, `email`) VALUES
 (5, 'Romina', 'Perez', 23444666, 'jperez@gmail.com'),
 (6, 'Juan', 'Perez', 23522556, 'jperez@gmail.com'),
 (7, 'Kevin', 'Silenti', 22333555, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `alumnosmaterias`
+--
+
+CREATE TABLE `alumnosmaterias` (
+  `idAlumno` int(11) NOT NULL,
+  `idMateria` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `alumnosmaterias`
+--
+
+INSERT INTO `alumnosmaterias` (`idAlumno`, `idMateria`) VALUES
+(1, 1),
+(1, 2),
+(2, 2),
+(2, 3),
+(2, 4),
+(3, 1);
 
 -- --------------------------------------------------------
 
@@ -109,6 +132,13 @@ ALTER TABLE `alumnos`
   ADD KEY `dni` (`dni`);
 
 --
+-- Indices de la tabla `alumnosmaterias`
+--
+ALTER TABLE `alumnosmaterias`
+  ADD PRIMARY KEY (`idAlumno`,`idMateria`),
+  ADD KEY `idMateria` (`idMateria`);
+
+--
 -- Indices de la tabla `materias`
 --
 ALTER TABLE `materias`
@@ -147,6 +177,13 @@ ALTER TABLE `profesores`
 --
 -- Restricciones para tablas volcadas
 --
+
+--
+-- Filtros para la tabla `alumnosmaterias`
+--
+ALTER TABLE `alumnosmaterias`
+  ADD CONSTRAINT `alumnosmaterias_ibfk_1` FOREIGN KEY (`idMateria`) REFERENCES `materias` (`id`),
+  ADD CONSTRAINT `alumnosmaterias_ibfk_2` FOREIGN KEY (`idAlumno`) REFERENCES `alumnos` (`id`);
 
 --
 -- Filtros para la tabla `materias`
