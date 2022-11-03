@@ -1,0 +1,62 @@
+SELECT MULTIPLES TABLAS:
+------------------------
+
+Mostrar profes y sus materias
+------------------------------
+SELECT profesores.id, profesores.nombre, profesores.apellido, materias.id, materias.nombre 
+FROM profesores, materias 
+WHERE profesores.id=materias.idProfesor
+
+
+Mostrar alumno id=2 y las materias que cursa
+-----------------------------
+SELECT alumnos.id, alumnos.nombre, alumnos.apellido, alumnosmaterias.idMateria, materias.nombre
+FROM alumnos, alumnosmaterias, materias
+WHERE alumnos.id=2 AND alumnos.id=alumnosmaterias.idAlumno AND alumnosmaterias.idMateria=materias.id
+
+
+
+SELECT profesores.id, profesores.nombre, profesores.apellido, materias.id, materias.nombre 
+FROM profesores, materias 
+WHERE profesores.id=materias.idProfesor ORDER BY profesores.id 
+
+SELECT profesores.nombre, profesores.apellido, materias.nombre FROM profesores, materias WHERE profesores.id=2 AND profesores.id=materias.idProfesor 
+
+
+SELECT profesores.id, profesores.nombre, materias.id, materias.nombre FROM profesores, materias WHERE profesores.id=materias.idProfesor 
+
+SELECT alumnos.id, alumnos.nombre, alumnos.apellido, materias.nombre FROM alumnos, alumnosmaterias, materias WHERE alumnos.id=alumnosmaterias.idAlumno and alumnosmaterias.idMateria=materias.id 
+
+
+SELECT alumnos.id, alumnos.nombre, alumnos.apellido, alumnosMaterias.idMateria, materias.nombre FROM alumnos, alumnosmaterias, materias WHERE alumnos.id=alumnosmaterias.idAlumno AND alumnosmaterias.idMateria=materias.id ORDER BY alumnos.id 
+
+SELECT alumnos.id, alumnos.nombre, alumnos.apellido, alumnosmaterias.idMateria, materias.nombre 
+FROM alumnos, alumnosmaterias, materias 
+WHERE alumnos.id=1 AND alumnos.id=alumnosmaterias.idAlumno AND alumnosmaterias.idMateria=materias.id 
+
+
+SELECT alumnos.id, alumnos.nombre, alumnos.apellido, alumnosMaterias.idMateria, materias.nombre FROM alumnos, alumnosmaterias, materias WHERE alumnos.id=1 AND alumnos.id=alumnosmaterias.idAlumno AND alumnosmaterias.idMateria=materias.id ORDER BY alumnos.id 
+
+
+
+JOIN
+======
+
+SELECT profesores.id, profesores.nombre, profesores.apellido, materias.id, materias.nombre FROM profesores INNER JOIN materias ON profesores.id=materias.idProfesor ORDER BY profesores.id  
+
+
+SELECT alumnos.nombre, alumnos.apellido, materias.nombre FROM (alumnos INNER JOIN alumnosmaterias on alumnos.id=alumnosmaterias.idAlumno) INNER JOIN materias ON materias.id=alumnosmaterias.idMateria 
+
+
+INSTRUCCIONES:
+-------------
+ALTER TABLE alumnosmaterias ADD FOREIGN KEY(idAlumno) REFERENCES alumnos(id) 
+
+
+
+SELECT alumnos.id, alumnos.nombre, alumnos.apellido, alumnosmaterias.idMateria, materias.nombre 
+FROM materias 
+INNER JOIN 
+	(alumnos INNER JOIN alumnosmaterias ON alumnos.id=alumnosmaterias.idAlumno) 
+ON materias.id=alumnosmaterias.idMateria 
+
