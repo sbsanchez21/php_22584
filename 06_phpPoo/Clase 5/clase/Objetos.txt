@@ -1,0 +1,40 @@
+mochila
+-------
+caracteristicas o atributos
+litros carga: 40ls
+material: tela
+bolsillos: 4
+correas: 2
+
+funciones o métodos
+cargar cosas
+
+
+Termo mate
+----------
+atributos
+material: metal
+litros: 1 litro
+color: negro
+
+métodos
+cargar y mantener tempera agua
+
+
+Concesionaria
+-------------
+Autos lista
+clientes
+vendedores
+
+vendedor
+--------
+nombre
+apellido
+
+vender auto
+
+clientes
+------
+
+

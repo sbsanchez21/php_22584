@@ -1,0 +1,58 @@
+Concesionaria:
+==============
+Clientes
+Vendedores
+Autos
+
+Cliente: Objeto -> POO Clases
+--------
+datos: -> atributos
+nombre
+apellido
+dni
+telefono
+email
+
+funciones -> métodos
+comprarAuto()
+pedirCotizacion()
+pagarCuota()
+
+
+Vendedor:
+---------
+atributos: datos
+nombre
+apellido
+dni
+telefono
+email
+cantVentas
+autosVendidos
+comision
+
+métodos: funciones
+venderAuto()
+hacerCotizacion()
+
+
+Auto:
+-----
+atributos: datos
+patente
+nroMotor
+anio
+marca
+modelo
+cantPuertas
+
+métodos: funciones
+trasladarse()
+arrancar()
+
+
+POO
+---
+objetos -> clases
+datos -> atributos
+funciones -> métodos 
