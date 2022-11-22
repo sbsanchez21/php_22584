@@ -1,0 +1,44 @@
+Ejemplo composición:
+--------------------
+
+Cliente:
+--------
+id
+nombre
+apellido
+dni
+telefono
+email
+direccion: calle, altura, codigo postal, piso, dpto, barrio, localidad, provincia, pais
+-> sacarlo a una clase
+ctaBancaria: tipoCuenta, cbu, nro, saldo, moneda, 
+-> sacarlo a clase
+
+Cuenta:
+------
+tipo: CtaCte, CajaAhorro, Sueldo
+cbu
+cvu
+nro 
+moneda
+saldo
+banco
+sucursal
+movimientos
+
+
+Direccion:
+----------
+id
+calle
+altura
+codigoPostal
+piso
+dpto
+manzana
+barrio
+localidad
+provincia
+pais
+
+
